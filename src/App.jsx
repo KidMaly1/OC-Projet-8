@@ -37,6 +37,7 @@ function App() {
 export default App
 */
 
+
 import Banner from "./Banner";
 import Card from "./Card";
 import Section1 from "./Home_img";
@@ -52,6 +53,7 @@ function App () {
     <Card></Card>
     <Footer></Footer>
     </>
+
   );
 }
 
