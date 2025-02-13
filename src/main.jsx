@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx'
-import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import App from './App.jsx';
+import './index.css';
+import { BrowserRouter } from 'react-router';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
-   <BrowserRouter>
-        <Routes>
-      <Route path="/" element={<h1>Coucou</h1>} />   
-      <Route path="/About" element={<About />} /> 
-    </Routes>
+  <React.StrictMode>
+    <BrowserRouter>
+        
+    <App />
 
-   </BrowserRouter>
+    </BrowserRouter>
+  </React.StrictMode>
+   
   
 )
