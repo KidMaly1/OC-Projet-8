@@ -71,7 +71,28 @@ button:focus-visible {
 
 */
 
+* {
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Page d'accueil */
 .home-banner {
   display: flex;
   justify-content: space-between;
@@ -80,27 +101,33 @@ button:focus-visible {
 
 .logo-img {
   margin-left: 5em;
+  height: 5em;
 }
 
-ul {
+nav {
   display: flex;
   list-style: none;
   margin-right: 5em;
-}
-
-li {
-  margin: 10px;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: black;
+  padding-left: 4em;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-img {
   width: 90%;
 }
 
+/* Cartes pour les logements */
 .card-container {
   display: flex;
   justify-content: center;
@@ -124,7 +151,36 @@ a {
   margin-top: 4em;
 }
 
-.footer-img {
+.footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  min-height: 100px;
+  text-align: center;
+  align-items: flex-end;
+}
 
+.footer-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Page d'erreur */
+.error-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+.text {
+  color: #FF6060;
 }

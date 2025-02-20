@@ -1,17 +1,19 @@
-import Logo from './assets/LOGO.png'
+import LogoKasa from '../assets/LOGO.png'
+import { Link } from "react-router"
 
 function Banner() {
     return (
         <div className="home-banner">
-            <img className="logo-img" src={Logo} alt="Kasa Logo"></img>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">A propos</a></li>
-                </ul>
-            </nav>
+                <img className="logo-img" src={LogoKasa} alt="Kasa Logo"></img>
+        
+                    <nav>
+                        <Link to="/">Accueil</Link>
+                        <Link to="./About">A propos</Link>
+                    </nav>
+
         </div>
+                
     )
 }
 

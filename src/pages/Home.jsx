@@ -1,6 +1,12 @@
+import Section1 from '../assets/Section-1.png'
+
 function Home() {
     return (
-        <h1>Aloha, Tit' ! 🏝️✈️</h1>
+
+        <div className="home-container" >
+            <img className="home-img" src={Section1} alt="Home image" ></img>
+        </div>
+                
     )
 }
 

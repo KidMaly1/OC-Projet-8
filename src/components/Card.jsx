@@ -1,4 +1,4 @@
-import Picture from './assets/Walt-Disney-embleme.jpg'
+
 
 function Card() {
     return (
