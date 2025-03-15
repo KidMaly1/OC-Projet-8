@@ -10,7 +10,15 @@ function About() {
             <img src={imgTrip} alt="img-trip" ></img>            
         </div>
 
+        <div>
+            <form>
+                
+            </form>
         </div>
+
+        </div>
+
+        
         
         
     );

@@ -3,10 +3,10 @@ import arrowLeft from "../assets/arrow_left.png";
 import arrowRight from "../assets/arrow_right.png";
 
 function Carrousel ( images ){
-    /*
+    
     const [currentImage, setImage] = useState(0);
-    const nbSlides = dataLogement.pictures.length;
-    */
+    const nbSlides = images.length;
+    
         return (
             
         
