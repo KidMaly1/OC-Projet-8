@@ -3,7 +3,7 @@ import FooterImg from '../assets/D_Footer.png'
 function Footer() {
     return (
         <div className="footer">
-            <img src={FooterImg} alt="Footer image" ></img>
+            <img className="footer-img" src={FooterImg} alt="Footer image" ></img>
         </div>
     )
 }

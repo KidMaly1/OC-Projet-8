@@ -1,7 +1,7 @@
 import ErrorImg from '../assets/404.png'
 import { Link } from 'react-router'
 
-function Crash() {
+function ErrorPage() {
     return (
 
         <div className="error-page-container">
@@ -15,4 +15,4 @@ function Crash() {
     )
 }
 
-export default Crash
+export default ErrorPage

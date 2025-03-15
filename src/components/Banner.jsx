@@ -9,7 +9,7 @@ function Banner() {
         
                     <nav>
                         <Link to="/">Accueil</Link>
-                        <Link to="./About">A propos</Link>
+                        <Link to="/About">A propos</Link>
                     </nav>
 
         </div>

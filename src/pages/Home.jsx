@@ -1,11 +1,26 @@
-import Section1 from '../assets/Section-1.png'
+import HomeImg from '../assets/IMG.png';
+import Datas from '../../appartements.json';
+import Card from '../components/Card';
 
 function Home() {
     return (
 
         <div className="home-container" >
-            <img className="home-img" src={Section1} alt="Home image" ></img>
+
+            <div className="home-img">
+                <p className="home-text" >Chez vous, partout et ailleurs</p>
+                <img className="background-img" src={HomeImg} alt="Home image" ></img>
+            </div>
+            
+
+            <div className="home-cards">
+                {Datas.map((logement) => <Card dataLogement={logement} />)}
+            </div>
+            
+            
         </div>
+
+        
                 
     )
 }
