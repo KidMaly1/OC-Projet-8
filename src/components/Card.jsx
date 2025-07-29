@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 
 function Card({dataLogement}) {
-    console.log(dataLogement);
+    
     return (
 
         <Link to={`/Housing/${dataLogement.id}`} className="card-container">

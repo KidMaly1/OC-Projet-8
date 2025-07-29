@@ -7,7 +7,10 @@ import Footer from './components/Footer.jsx'
 import Housing from './pages/Housing.jsx'
 import ErrorPage from './pages/Errorpage.jsx'
 import Carrousel from './components/Carrousel.jsx'
-
+import Dropdown from './components/Dropdown.jsx'
+import Tropical from './components/Tropical.jsx'
+import Collapse from './components/Collapse.jsx'
+import Tags from './components/Tags.jsx'
 
 
 function App () {
@@ -19,7 +22,9 @@ function App () {
             <Route path="/About" element={<About />} />
             <Route path="/Housing/:id" element={<Housing />} />
             <Route path="*" element={<ErrorPage/>} />
-            <Route path="/Carrousel" element={<Carrousel />} />
+            <Route path="/Dropdown" element={<Dropdown />} />
+            <Route path="/Tropical" element={<Tropical />} />
+            <Route path="/Collapse" element={<Collapse />} />
         </Routes>
       <Footer />
 

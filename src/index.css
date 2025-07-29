@@ -141,6 +141,7 @@ nav a {
   object-position: center;
   display: block;
   border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(180deg, #0A0A0A00 -14%, #04040469 80%);
 }
 
 .home-text {
@@ -168,6 +169,7 @@ nav a {
   justify-content: center;
   flex-wrap: wrap;
   width: 400px;
+  text-decoration: none;
 }
 
 .card {
@@ -181,6 +183,7 @@ nav a {
   color: white;
   position: relative;
   overflow: hidden;
+  
 }
 
 .card a {
@@ -189,10 +192,14 @@ nav a {
 
 .card-title {
   z-index: 2;
-  position: relative;
+  position: absolute;
   color: white;
-  top: 80%;
+  bottom: 0;
   text-decoration: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 50));
+  margin: 0;
+  padding: 16px 0;
+  width: 100%;
 }
 
 .card-image {
@@ -274,11 +281,50 @@ nav a {
   border-radius: 20px 20px 20px 20px;
 }
 
-/* Page Fiche Logement */
+.house {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapse-life {
+  width: 100%;
+}
+
+.collapse {
+  flex: 1;
+  width: 70%;
+  padding-top: 2em;
+}
+
+.collapse-toggle {
+  background-color: #ff6060;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+/* Page Fiche Logement, Carrousel */
+
+.housing-content {
+  max-width: max-content;
+  margin: 0 auto;
+  
+}
 
 .slider {
-  position: relative;
-  height: 80em;
+  display: flex;
+  height: auto;
   width: 85em;
 }
 
@@ -298,12 +344,6 @@ nav a {
   right: 10px;
 }
 
-.house {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .house-img {
   position: relative;
   height: 30em;
@@ -311,6 +351,7 @@ nav a {
 }
 
 .carrousel-img {
+  
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -318,8 +359,86 @@ nav a {
   border-radius: 20px 20px 20px 20px;
 }
 
+.img-index {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  color: white;
+}
 
 h1 {
   color: #FF6060;
 }
 
+/*Dropdown */
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  flex: 1;
+  max-width: 45%;
+}
+
+.dropdown-toggle {
+  background-color: #ff6060;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  background-color: #f6f6f6;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+/*
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF6060;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  height: 50px;
+  width: 120px;
+  color: white;
+}*/
