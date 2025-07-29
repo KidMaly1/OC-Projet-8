@@ -94,7 +94,7 @@ return (
 
         <div className="tag-container">
             <div className="tag">
-                <p>Aloha Tag Brah</p>
+                <p>Aloha Tag</p>
             </div>
         </div>
             
