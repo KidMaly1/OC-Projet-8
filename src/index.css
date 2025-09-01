@@ -442,3 +442,22 @@ li {
   width: 120px;
   color: white;
 }*/
+
+.tags-ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.star {
+  transition: transform 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.1);
+}

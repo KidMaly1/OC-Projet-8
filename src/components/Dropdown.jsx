@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Dropdown () {
+function Dropdown ({ title, content }) {
 
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
@@ -11,8 +11,7 @@ function Dropdown () {
 
         message1 = (
                 <div className="dropdown-content">
-                    <p>Appartement lumineux situé au cœur du 17e arrondissement, parfait
-                    pour les amoureux de calme et de confort...</p>
+                    <p>{content}</p>
                 </div>
                     )
 
@@ -42,10 +41,12 @@ function Dropdown () {
 
     return (
 
+        // dropdownText.map((description) => //
+
         <div className="dropdown-container">
 
                 <div className="dropdown">
-                    <button onClick={() => setIsOpen1(!isOpen1)} className="dropdown-toggle">Description</button>
+                    <button onClick={() => setIsOpen1(!isOpen1)} className="dropdown-toggle">{title}</button>
                     {message1}
                 </div>
 
@@ -56,7 +57,7 @@ function Dropdown () {
 
         </div>
         
-
+    
     )
 }
 

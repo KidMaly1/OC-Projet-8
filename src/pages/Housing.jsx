@@ -3,6 +3,8 @@ import ErrorPage from './Errorpage';
 import Datas from '../../appartements.json';
 import Carrousel from '../components/Carrousel';
 import Tags from '../components/Tags';
+import Ratings from '../components/Ratings';
+import Dropdown from '../components/Dropdown';
 
 
 function Housing() {
@@ -36,14 +38,17 @@ function Housing() {
         
             </div>
 
-            <Tags alohaTags={logement.tags} />
+            <div className="tags-ratings">
 
+                    <Tags alohaTags={logement.tags} />
+                    <Ratings score={parseInt(logement.rating)} />
 
-        {/*}
-              <div className="tag-container">
-                {Datas.map((tags) => <Tags alohaTags={tags}/> )}
-                
-            </div> */}
+            </div>
+
+            <div className="dropdown-preview">
+                    <Dropdown title="Description" content={logement.description} />
+            </div>
+
 
         </div>
         

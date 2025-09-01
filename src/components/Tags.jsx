@@ -1,4 +1,3 @@
-import Datas from '../../appartements.json';
 
 function Tags({ alohaTags }) {
 
