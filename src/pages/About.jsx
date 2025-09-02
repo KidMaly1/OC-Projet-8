@@ -10,7 +10,7 @@ function About() {
                             <img src={imgTrip} alt="img-trip" ></img>            
                     </div>
 
-                    <div className="collapse-life">
+                    <div className="collapses">
                             <Collapse />
                     </div>
 

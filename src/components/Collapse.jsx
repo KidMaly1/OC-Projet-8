@@ -71,6 +71,7 @@ else {
 
 return (
     <div className="collapse-container">
+        
 
                 <div className="collapse">
                     <button onClick={() => setCollapseOpen1(!collapseOpen1)} className="collapse-toggle">Fiabilité</button>
@@ -92,12 +93,6 @@ return (
                     {text4}
                 </div>
 
-        <div className="tag-container">
-            <div className="tag">
-                <p>Aloha Tag</p>
-            </div>
-        </div>
-            
 
         </div>
 )

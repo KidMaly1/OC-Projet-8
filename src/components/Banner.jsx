@@ -5,8 +5,10 @@ function Banner() {
     return (
         <div className="home-banner">
 
-                <img className="logo-img" src={LogoKasa} alt="Kasa Logo"></img>
-        
+                <Link to="/">
+                    <img className="logo-img" src={LogoKasa} alt="Kasa Logo"></img>
+                </Link>
+                
                     <nav>
                         <Link to="/">Accueil</Link>
                         <Link to="/About">A propos</Link>
