@@ -45,9 +45,11 @@ function Housing() {
 
             </div>
 
-            <div className="dropdown-preview">
+            <div className="dropdown-idk">
                     <Dropdown title="Description" content={logement.description} />
+                    <Dropdown title="Equipements" content={logement.equipments} />
             </div>
+            
 
 
         </div>

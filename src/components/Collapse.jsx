@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrowUp from "../assets/arrow_up.png"
 
 function Collapse () {
 
@@ -6,8 +7,14 @@ function Collapse () {
     const [collapseOpen2, setCollapseOpen2] = useState(false);
     const [collapseOpen3, setCollapseOpen3] = useState(false);
     const [collapseOpen4, setCollapseOpen4] = useState(false);
+    
 
     let text1, text2, text3, text4;
+    let arrowClass = "dropdown-arrow";
+    let arrowClass2 = "dropdown-arrow";
+    let arrowClass3 = "dropdown-arrow";
+    let arrowClass4 = "dropdown-arrow";
+    
 
 /* First Collapse */
 if (collapseOpen1) {
@@ -23,6 +30,15 @@ else {
     text1 = null;
 }
 
+
+
+        if(collapseOpen1) {
+            arrowClass += " open";
+        } else {
+            arrowClass += " closed";
+        }
+
+
 /* Second Collapse */
 if (collapseOpen2) {
     text2 = (
@@ -37,6 +53,13 @@ else {
     text2 = null;
 }
 
+if(collapseOpen2) {
+            arrowClass2 += " open";
+        } else {
+            arrowClass2 += " closed";
+        }
+
+
 /* Third Collapse */
 if (collapseOpen3) {
     text3 = (
@@ -50,6 +73,13 @@ if (collapseOpen3) {
 else {
     text3 = null;
 }
+
+if(collapseOpen3) {
+            arrowClass3 += " open";
+        } else {
+            arrowClass3 += " closed";
+        }
+     
 
 /* Fourth Collapse */
 if (collapseOpen4) {
@@ -67,29 +97,42 @@ else {
     text4 = null;
 }
 
-
+if(collapseOpen4) {
+            arrowClass4 += " open";
+        } else {
+            arrowClass4 += " closed";
+        }
+        
 
 return (
     <div className="collapse-container">
         
 
                 <div className="collapse">
-                    <button onClick={() => setCollapseOpen1(!collapseOpen1)} className="collapse-toggle">Fiabilité</button>
+                    <button onClick={() => setCollapseOpen1(!collapseOpen1)} className="collapse-toggle"><span>Fiabilité</span>
+                        <img className={arrowClass} src={arrowUp} alt="Dropdown Arrow" ></img>
+                    </button>
                     {text1}
                 </div>
 
                 <div className="collapse">
-                    <button onClick={() => setCollapseOpen2(!collapseOpen2)} className="collapse-toggle">Respect</button>
+                    <button onClick={() => setCollapseOpen2(!collapseOpen2)} className="collapse-toggle"><span>Respect</span>
+                        <img className={arrowClass2} src={arrowUp} alt="Dropdown Arrow" ></img>
+                    </button>
                     {text2}
                 </div>
 
                 <div className="collapse">
-                    <button onClick={() => setCollapseOpen3(!collapseOpen3)} className="collapse-toggle">Service</button>
+                    <button onClick={() => setCollapseOpen3(!collapseOpen3)} className="collapse-toggle"><span>Service</span>
+                        <img className={arrowClass3} src={arrowUp} alt="Dropdown Arrow" ></img>
+                    </button>
                     {text3}
                 </div>
 
                 <div className="collapse">
-                    <button onClick={() => setCollapseOpen4(!collapseOpen4)} className="collapse-toggle">Sécurité</button>
+                    <button onClick={() => setCollapseOpen4(!collapseOpen4)} className="collapse-toggle"><span>Sécurité</span>
+                        <img className={arrowClass4} src={arrowUp} alt="Dropdown Arrow" ></img>
+                    </button>
                     {text4}
                 </div>
 

@@ -1,65 +1,55 @@
 import { useState } from "react";
+import arrowUp from "../assets/arrow_up.png";
 
-function Dropdown ({ title, content }) {
+function Dropdown({ title, content }) {
 
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    let message1, message2;
+    let message;
 
-    if (isOpen1) {
+        if (isOpen) {
+            if (Array.isArray(content)) {
 
-        message1 = (
+            message = (
+                <div className="dropdown-content">
+                    <ul>
+                        {content.map((item, index) => (
+                        <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+            );
+            } else {
+            message = (
                 <div className="dropdown-content">
                     <p>{content}</p>
                 </div>
-                    )
-
-                }
-    else {
-        message1 = null;
-    }
+            );
+            }
+        }
 
 
-    if (isOpen2) {
+        let arrowClass = "dropdown-arrow";
 
-        message2 = (
-                <div className="dropdown-content">
-                    <ul>
-                        <li>Wi-Fi</li>
-                        <li>Machine à laver</li>
-                        <li>Air conditionné</li>
-                        <li>Cuisine équipée</li>
-                    </ul>
-                </div>
-                    )
-                }
-    else {
-        message2 = null;
-    }
-    
+        if(isOpen) {
+            arrowClass += " open";
+        } else {
+            arrowClass += " closed";
+        }
 
-    return (
 
-        // dropdownText.map((description) => //
+  return (
 
-        <div className="dropdown-container">
+        <div className="dropdown">
 
-                <div className="dropdown">
-                    <button onClick={() => setIsOpen1(!isOpen1)} className="dropdown-toggle">{title}</button>
-                    {message1}
-                </div>
-
-                <div className="dropdown">
-                    <button onClick={() => setIsOpen2(!isOpen2)} className="dropdown-toggle">Équipements</button>
-                    {message2}
-                </div>
-
+        <button className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
+            <span className="dropdown-title" >{title}</span>
+            <img className={arrowClass} src={arrowUp} alt="Dropdown Arrow" ></img>
+        </button>
+        {message}
         </div>
+        );
         
-    
-    )
 }
 
-
-export default Dropdown
+export default Dropdown;

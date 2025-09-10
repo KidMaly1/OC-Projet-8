@@ -20,6 +20,32 @@ function Carrousel ({ pictures }){
         const newIndex = isLast ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
       };
+      
+
+      let imageIndexDisplay;
+
+            if (pictures.length > 1) {
+            imageIndexDisplay = (
+                <p className="img-index">
+                {currentIndex + 1} / {pictures.length}
+                </p>
+            );
+            } else {
+            imageIndexDisplay = null;
+            }
+
+            /* 
+            let arrowDisplay;
+            if (pictures.lenght > 1) {
+            arrowDisplay = (
+                <img className="arrow-left" src={arrowLeft} onClick={goToPrevious} alt="Précédente"></img>
+                <img className="arrow-right" src={arrowRight} onClick={goToNext} alt="Suivante" ></img>
+            );
+        } else {
+            arrowDisplay = null;
+        }
+        */
+
 
         return (
             
@@ -36,7 +62,8 @@ function Carrousel ({ pictures }){
                     <img className="arrow-left" src={arrowLeft} onClick={goToPrevious} alt="Précédente"></img>
                     <img className="arrow-right" src={arrowRight} onClick={goToNext} alt="Suivante" ></img>
                     
-                    <p className="img-index">{currentIndex + 1} / {pictures.length}</p>
+                    {/*Numérotation*/}
+                    {imageIndexDisplay}
                 </div>
 
             </div>
