@@ -1,4 +1,5 @@
-import FooterImg from '../assets/D_Footer.png'
+import FooterImg from '../assets/D_Footer.png';
+import '../components/Footer.css';
 
 function Footer() {
     return (

@@ -1,17 +1,23 @@
-import LogoKasa from '../assets/LOGO.png'
-import { Link } from "react-router"
+import LogoKasa from '../assets/LOGO.png';
+import { NavLink } from "react-router";
+import '../components/Banner.css';
 
 function Banner() {
     return (
         <div className="home-banner">
 
-                <Link to="/">
+                <NavLink to="/">
                     <img className="logo-img" src={LogoKasa} alt="Kasa Logo"></img>
-                </Link>
+                </NavLink>
                 
                     <nav>
-                        <Link to="/">Accueil</Link>
-                        <Link to="/About">A propos</Link>
+                        <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+                            Accueil
+                        </NavLink>
+
+                        <NavLink to="/About" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+                            A propos
+                        </NavLink>
                     </nav>
 
         </div>

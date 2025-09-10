@@ -1,3 +1,4 @@
+import '../components/Tags.css';
 
 function Tags({ alohaTags }) {
 

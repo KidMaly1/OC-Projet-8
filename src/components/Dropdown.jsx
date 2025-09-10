@@ -1,5 +1,6 @@
 import { useState } from "react";
 import arrowUp from "../assets/arrow_up.png";
+import '../components/Dropdown.css';
 
 function Dropdown({ title, content }) {
 

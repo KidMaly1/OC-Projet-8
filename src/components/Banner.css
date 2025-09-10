@@ -1,0 +1,10 @@
+/* Banner */
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}

@@ -1,4 +1,4 @@
-import SectionOne from './assets/Section-1.png'
+import SectionOne from './assets/Section-1.png';
 
 function Section1() {
     return (

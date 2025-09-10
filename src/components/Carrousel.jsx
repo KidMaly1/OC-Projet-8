@@ -1,6 +1,7 @@
 import { useState } from "react";
 import arrowLeft from "../assets/arrow_left.png";
 import arrowRight from "../assets/arrow_right.png";
+import '../components/Carrousel.css';
 
 function Carrousel ({ pictures }){
 
@@ -34,17 +35,18 @@ function Carrousel ({ pictures }){
             imageIndexDisplay = null;
             }
 
-            /* 
-            let arrowDisplay;
-            if (pictures.lenght > 1) {
-            arrowDisplay = (
-                <img className="arrow-left" src={arrowLeft} onClick={goToPrevious} alt="Précédente"></img>
-                <img className="arrow-right" src={arrowRight} onClick={goToNext} alt="Suivante" ></img>
-            );
+            
+      let arrowDisplay;
+
+            if (pictures.length > 1) {
+            arrowDisplay = ( <> 
+                <img className="arrow-left" src={arrowLeft} onClick={goToPrevious} alt="Précédente" />
+                <img className="arrow-right" src={arrowRight} onClick={goToNext} alt="Suivante" />
+            </>);
         } else {
             arrowDisplay = null;
         }
-        */
+        
 
 
         return (
@@ -59,8 +61,7 @@ function Carrousel ({ pictures }){
 
                     {/* Flèches */}
                     
-                    <img className="arrow-left" src={arrowLeft} onClick={goToPrevious} alt="Précédente"></img>
-                    <img className="arrow-right" src={arrowRight} onClick={goToNext} alt="Suivante" ></img>
+                    {arrowDisplay}
                     
                     {/*Numérotation*/}
                     {imageIndexDisplay}

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import arrowUp from "../assets/arrow_up.png"
+import arrowUp from "../assets/arrow_up.png";
+import '../components/Collapse.css';
 
 function Collapse () {
 

@@ -1,3 +1,4 @@
+import '../components/Ratings.css';
 
 function Ratings({ score }) {
   const maxStars = 5;

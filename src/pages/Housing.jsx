@@ -5,6 +5,7 @@ import Carrousel from '../components/Carrousel';
 import Tags from '../components/Tags';
 import Ratings from '../components/Ratings';
 import Dropdown from '../components/Dropdown';
+import '../pages/Housing.css';
 
 
 function Housing() {

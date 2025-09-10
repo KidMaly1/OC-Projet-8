@@ -1,5 +1,6 @@
 import imgTrip from "../assets/Image source 2.png";
 import Collapse from "../components/Collapse";
+import '../pages/About.css';
 
 function About() {
     return (

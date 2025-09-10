@@ -1,5 +1,6 @@
-import ErrorImg from '../assets/404.png'
-import { Link } from 'react-router'
+import ErrorImg from '../assets/404.png';
+import { Link } from 'react-router';
+import '../pages/Errorpage.css';
 
 function ErrorPage() {
     return (

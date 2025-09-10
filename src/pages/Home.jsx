@@ -1,6 +1,7 @@
 import HomeImg from '../assets/IMG.png';
 import Datas from '../../appartements.json';
 import Card from '../components/Card';
+import '../pages/Home.css';
 
 function Home() {
     return (

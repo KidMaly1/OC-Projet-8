@@ -1,0 +1,45 @@
+/* Carrousel */
+
+.slider {
+  display: flex;
+  height: auto;
+  width: 85em;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.house-img {
+  position: relative;
+  height: 30em;
+  width: 85em;
+}
+
+.carrousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.img-index {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  color: white;
+}
