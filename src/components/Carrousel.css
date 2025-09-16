@@ -43,3 +43,19 @@
   bottom: 10px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .slider {
+    width: 21rem;
+    
+  }
+
+  .house-img {
+    position: relative;
+    height: fit-content;
+  }
+
+  .carrousel-img {
+    height: 16rem;
+  }
+}

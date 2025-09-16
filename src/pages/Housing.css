@@ -15,3 +15,53 @@
 h1 {
   color: #FF6060;
 }
+
+.house-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-and-host {
+  display: flex;
+  justify-content: space-between;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.host-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ff6060;
+}
+
+.host-picture {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+
+  .house-idk {
+    
+  }
+
+
+  .title-and-host {
+    display: flex;
+  }
+
+  .dropdown-idk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

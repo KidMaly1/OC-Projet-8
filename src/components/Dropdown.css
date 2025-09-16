@@ -56,3 +56,15 @@ li {
   margin-bottom: 6px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  
+
+  .dropdown-idk {
+    display: flex;
+  }
+
+  .dropdown-toggle {
+    width: 21rem;
+  }
+}

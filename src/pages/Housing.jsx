@@ -31,29 +31,48 @@ function Housing() {
             </div>
 
 
+            <div className="house-idk" >
 
-            <div className="house-info">
+                        <div className="house-info">
 
-                    <h1>{logement.title}</h1>
-                    <p>{logement.location}</p>
-        
+                            <div className="title-and-host">
+                                    <h1>{logement.title}</h1>
+                                                        
+                                        
+                            </div>
+
+                            <div className="host-info">
+                                            <p className="host-name">{logement.host.name}</p>
+                                            <img className="host-picture" src={logement.host.picture} alt="Host Picture" ></img>
+                                        </div> 
+
+                                
+                    
+                        </div>
+
+                                <p>{logement.location}</p>
+
+                        <div className="tags-ratings">
+
+                                <Tags alohaTags={logement.tags} />
+                                <Ratings score={parseInt(logement.rating)} />
+
+                        </div>
+
+                            
+
+                        <div className="dropdown-idk">
+                                <Dropdown title="Description" content={logement.description} />
+                                <Dropdown title="Equipements" content={logement.equipments} />
+                        </div>
+                        
+
+
+                    </div>
+
+
             </div>
 
-            <div className="tags-ratings">
-
-                    <Tags alohaTags={logement.tags} />
-                    <Ratings score={parseInt(logement.rating)} />
-
-            </div>
-
-            <div className="dropdown-idk">
-                    <Dropdown title="Description" content={logement.description} />
-                    <Dropdown title="Equipements" content={logement.equipments} />
-            </div>
-            
-
-
-        </div>
         
         
     )
