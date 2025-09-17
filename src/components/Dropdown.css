@@ -32,9 +32,14 @@
   padding-left: 10px;
 }
 
+.dropdown-content {
+  width: min-content;
+  padding: 10px;
+}
+
 .dropdown-arrow {
   height: 20px;
-  padding-right: 10px;
+  
   transition: transform 0.3s ease;
 }
 
@@ -62,6 +67,13 @@ li {
 
   .dropdown-idk {
     display: flex;
+    margin-top: 0;
+    width: 21rem;
+  }
+
+  .dropdown {
+    max-width: max-content;
+    padding: 1rem;
   }
 
   .dropdown-toggle {

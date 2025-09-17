@@ -9,7 +9,10 @@ function Card({dataLogement}) {
             
             <div className="card">
 
-                <p className="card-title" >{dataLogement.title}</p>
+                <div className="card-content">
+                    <div className="card-overlay"></div>
+                    <p className="card-title" >{dataLogement.title}</p>
+                </div>
 
                         <div className="card-image">
                             <img className="cover-img" src={dataLogement.cover} alt="cover image" ></img>

@@ -16,28 +16,42 @@ h1 {
   color: #FF6060;
 }
 
+.house-alo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .house-info {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
-.title-and-host {
+.title-and-location {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.host-info-and-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .host-info {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: end;
 }
 
 .host-name {
   font-weight: bold;
   font-size: 1rem;
   color: #ff6060;
+  max-width: 50%;
 }
 
 .host-picture {
@@ -49,19 +63,27 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  
 
-  .house-idk {
-    
+  .house-alo {
+    flex-direction: column;
+    width: 21rem;
   }
 
-
-  .title-and-host {
-    display: flex;
+  .host-info-and-ratings {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
   }
-
+  
   .dropdown-idk {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  h1 {
+    font-size: 17px;
+    max-width: 70%;
   }
 }

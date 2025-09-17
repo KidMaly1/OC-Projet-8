@@ -35,3 +35,14 @@
 .collapse-toggle span {
   padding-left: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    width: auto;
+  }
+
+  .collapse-content {
+    width: 19rem;
+    padding: 10px;
+  }
+}
