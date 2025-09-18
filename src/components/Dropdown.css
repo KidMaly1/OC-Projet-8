@@ -33,7 +33,7 @@
 }
 
 .dropdown-content {
-  width: min-content;
+  width: 38rem;
   padding: 10px;
 }
 
@@ -64,11 +64,10 @@ li {
 
 @media screen and (max-width: 768px) {
   
-
   .dropdown-idk {
     display: flex;
     margin-top: 0;
-    width: 21rem;
+    width: fit-content;
   }
 
   .dropdown {
@@ -76,7 +75,12 @@ li {
     padding: 1rem;
   }
 
+  .dropdown-content {
+    width: 19rem;
+    padding: 10px;
+  }
+
   .dropdown-toggle {
-    width: 21rem;
+    width: 23rem;
   }
 }

@@ -32,16 +32,16 @@
 
 @media screen and (max-width: 768px) {
   .about-img {
-    width: 21rem;
+    width: 23rem;
     height: 7rem;;
   }
 
   .about-img::before {
-    width: 21rem;
+    width: 23rem;
     height: 7rem;
   }
 
   .collapse-toggle {
-    width: 21rem;
+    width: 23rem;
   }
 }

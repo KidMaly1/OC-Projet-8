@@ -63,11 +63,13 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  
+  .housing-content {
+    width: 23rem;
+  }
 
   .house-alo {
     flex-direction: column;
-    width: 21rem;
+    width: 23rem;
   }
 
   .host-info-and-ratings {
@@ -80,6 +82,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 23rem;
   }
 
   h1 {
