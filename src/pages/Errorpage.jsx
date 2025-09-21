@@ -5,7 +5,8 @@ import '../pages/Errorpage.css';
 function ErrorPage() {
     return (
 
-        <div className="error-page-container">
+        <div className="main">
+<div className="error-page-container">
                 <img className="error-page-img" src={ErrorImg} alt="404 image"></img>
 
                 <div className="error-text">
@@ -13,6 +14,9 @@ function ErrorPage() {
                     <Link to="/">Retourner sur la page d'accueil</Link>
                 </div>
         </div>
+        </div>
+
+        
     )
 }
 

@@ -20,3 +20,17 @@
   font-size: 40px;
   margin-bottom: 4em;
 }
+
+@media screen and (max-width: 768px) {
+  .error-page-img {
+    width: 198px;
+    height: 99px;
+    margin-top: 5em;
+  }
+
+  .text {
+    font-size: 18px;
+    font-weight: 500;
+    width: 50%;
+  }
+}
