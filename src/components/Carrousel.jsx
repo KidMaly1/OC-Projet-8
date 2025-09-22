@@ -64,7 +64,10 @@ function Carrousel ({ pictures }){
                     {arrowDisplay}
                     
                     {/*Numérotation*/}
-                    {imageIndexDisplay}
+                    <div className="image-index">
+                        {imageIndexDisplay}
+                    </div>
+                    
                 </div>
 
             </div>

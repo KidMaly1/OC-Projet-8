@@ -63,4 +63,8 @@
     top: 40%;
     height: 2rem;
   }
+
+  .image-index {
+    display: none;
+  }
 }
