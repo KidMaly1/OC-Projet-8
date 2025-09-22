@@ -3,54 +3,34 @@ import arrowUp from "../assets/arrow_up.png";
 import '../components/Dropdown.css';
 
 function Dropdown({ title, content }) {
-
   const [isOpen, setIsOpen] = useState(false);
 
-    let message;
-
-        if (isOpen) {
-            if (Array.isArray(content)) {
-
-            message = (
-                <div className="dropdown-content">
-                    <ul>
-                        {content.map((item, index) => (
-                        <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                </div>
-            );
-            } else {
-            message = (
-                <div className="dropdown-content">
-                    <p>{content}</p>
-                </div>
-            );
-            }
-        }
-
-
-        let arrowClass = "dropdown-arrow";
-
-        if(isOpen) {
-            arrowClass += " open";
-        } else {
-            arrowClass += " closed";
-        }
-
+  const arrowClass = isOpen ? "dropdown-arrow open" : "dropdown-arrow closed";
 
   return (
+    <div className="dropdown">
 
-        <div className="dropdown">
+      <button className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <span className="dropdown-title">{title}</span>
+          <img className={arrowClass} src={arrowUp} alt="Dropdown Arrow" />
+      </button>
 
-        <button className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
-            <span className="dropdown-title" >{title}</span>
-            <img className={arrowClass} src={arrowUp} alt="Dropdown Arrow" ></img>
-        </button>
-        {message}
+      {isOpen && (
+        <div className="dropdown-content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
-        );
-        
+      )}
+      
+    </div>
+  );
 }
 
 export default Dropdown;

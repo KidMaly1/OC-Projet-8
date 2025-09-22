@@ -10,7 +10,7 @@ function ErrorPage() {
                 <img className="error-page-img" src={ErrorImg} alt="404 image"></img>
 
                 <div className="error-text">
-                    <p className="text">Oups! La page que vous demandez n'existe pas.</p>
+                    <p className="text">Oups! La page <span className="line-break-404">que</span> vous demandez n'existe pas.</p>
                     <Link to="/">Retourner sur la page d'accueil</Link>
                 </div>
         </div>
