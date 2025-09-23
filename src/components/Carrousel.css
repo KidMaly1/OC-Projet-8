@@ -47,7 +47,7 @@
 @media screen and (max-width: 768px) {
   .slider {
     width: 23rem;
-    
+    height: 255px;
   }
 
   .house-img {
